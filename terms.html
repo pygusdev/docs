@@ -1,92 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Termos de Uso da PYGUS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    h1 {
-      color: #1a1a1a;
-    }
-    h2 {
-      color: #2e2e2e;
-    }
-    p, li {
-      font-size: 16px;
-      color: #3a3a3a;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    .section-title {
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso da PYGUS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F6F3EF;
+            --paper: #FFFFFF;
+            --ink: #1F2933;
+            --muted: #52606D;
+            --accent: #F47327;
+            --accent-2: #3F7073;
+            --border: #E4E7EB;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.7;
+            background: radial-gradient(1200px circle at 90% -10%, #FFF1E4 0%, transparent 45%),
+                radial-gradient(900px circle at 0% 0%, #E8F6F7 0%, transparent 45%),
+                var(--bg);
+            color: var(--ink);
+        }
+        main.page {
+            max-width: 900px;
+            margin: 48px auto;
+            padding: 0 20px 72px;
+        }
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 36px 40px;
+            box-shadow: 0 20px 60px rgba(31, 41, 51, 0.12);
+        }
+        .page-header {
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: var(--ink);
+        }
+        h2 {
+            margin-top: 32px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-2);
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 54px;
+            height: 3px;
+            background: var(--accent);
+            margin-top: 8px;
+            border-radius: 999px;
+        }
+        h3 {
+            margin-top: 24px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--ink);
+        }
+        p, li {
+            margin-bottom: 16px;
+            color: var(--muted);
+        }
+        ul, ol {
+            padding-left: 20px;
+            margin: 12px 0 0;
+        }
+        .toc {
+            list-style: none;
+            padding-left: 0;
+            margin: 16px 0 0;
+            display: grid;
+            gap: 10px;
+        }
+        .toc li {
+            padding: 10px 12px;
+            border-radius: 12px;
+            background: #F8FAFB;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            color: var(--muted);
+        }
+        .lead {
+            font-size: 1.05rem;
+            margin: 0;
+        }
+        .updated {
+            margin-top: 32px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            background: #FFF4EC;
+            color: #8A3B12;
+            font-weight: 600;
+            display: inline-block;
+        }
+        @media (max-width: 600px) {
+            main.page {
+                margin: 32px auto;
+            }
+            .card {
+                padding: 24px;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Termos de Uso da PYGUS</h1>
-  <p>Olá, seja bem-vindo aos Termos de Uso da PYGUS. Pedimos que leia com atenção as disposições a seguir, uma vez que seu aceite expresso é essencial para utilizar nosso aplicativo.</p>
+    <main class="page">
+        <article class="card">
+            <header class="page-header">
+                <h1>Termos de Uso da PYGUS</h1>
+                <p class="lead">Este documento regula o uso do aplicativo PYGUS por responsáveis legais de pacientes menores de idade e por pacientes maiores de 18 anos, quando o acesso é disponibilizado por um profissional de fonoaudiologia responsável.</p>
+            </header>
 
-  <p>Os Termos de Uso tratam dos seguintes tópicos:</p>
-  <ul>
-    <li>Aceite do Paciente;</li>
-    <li>Declaração de propriedade do aplicativo mobile;</li>
-    <li>Serviços oferecidos;</li>
-    <li>Direito de uso dos serviços;</li>
-    <li>Acesso do Pacientes ao aplicativo;</li>
-    <li>Canais de comunicação;</li>
-    <li>Disposições gerais.</li>
-  </ul>
+            <h2>Tópicos</h2>
+            <ul class="toc">
+                <li>Aceite e elegibilidade;</li>
+                <li>Sobre a PYGUS e o aplicativo;</li>
+                <li>Papel do profissional e escopo do app;</li>
+                <li>Uso do aplicativo e responsabilidades;</li>
+                <li>Dados pessoais e conteúdos;</li>
+                <li>Assinaturas e pagamentos (quando aplicável);</li>
+                <li>Propriedade intelectual;</li>
+                <li>Suspensão e rescisão;</li>
+                <li>Limitação de responsabilidade;</li>
+                <li>Privacidade e direitos do titular;</li>
+                <li>Comunicação, atualizações e foro.</li>
+            </ul>
 
-  <h2>1. Aceite do Paciente</h2>
-  <p>1.1 Para realizar o cadastro do PACIENTE no aplicativo da PYGUS, é preciso aceitar expressamente nossos TERMOS DE USO, marcando a indicação de aceite no momento do cadastramento, no local indicado na tela.</p>
-  <p>1.2 A recusa desses Termos de Uso é impeditivo para o cadastro do PACIENTE e para o acesso ao nosso aplicativo.</p>
+            <h3>1. Aceite e Elegibilidade</h3>
+            <p>1.1 Para fins destes Termos, “Paciente” é a criança ou adolescente que realiza as atividades no aplicativo, e “Responsável Legal” é a pessoa que detém poderes legais para aceitar estes Termos e supervisionar o uso.</p>
+            <p>1.2 Se o Paciente for menor de idade, o aceite deve ser realizado pelo Responsável Legal, que declara possuir poderes legais e autorizações necessárias.</p>
+            <p>1.3 Se o Paciente for maior de 18 anos, ele próprio poderá aceitar estes Termos.</p>
+            <p>1.4 O uso do aplicativo por crianças e adolescentes deve ocorrer sob a supervisão do Responsável Legal e conforme orientação do profissional responsável.</p>
 
-  <h2>2. Declaração de Propriedade do Aplicativo</h2>
-  <p>2.1 Estes Termos de Uso regem o acesso e/ou uso do aplicativo e fornecidos pela empresa PYGUS, pessoa jurídica de direito privado, devidamente inscrita no CNPJ nº 47.932.823/0001-19, com sede na Rua Florestal, 57, Chã da Jaqueira, CEP 57018528, Maceió-Alagoas.</p>
-  <p>2.2 Os elementos técnicos, ferramentas e demais propriedades intelectuais relacionadas à plataforma são de titularidade exclusiva da PYGUS.</p>
-  <p>2.3 A utilização, modificação e/ou reprodução de qualquer elemento, funcionalidade ou ferramenta da plataforma deve ser objeto de licença específica.</p>
+            <h3>2. Sobre a PYGUS e o Aplicativo</h3>
+            <p>2.1 A PYGUS LTDA, inscrita no CNPJ nº 47.932.823/0001-19, com sede na Avenida Fernandes Lima 8, Sala 406, Edifício E. Centenário Office, Farol, Maceió/AL, CEP 57050-000, disponibiliza uma plataforma tecnológica de apoio ao acompanhamento fonoaudiológico.</p>
+            <p>2.2 O aplicativo não constitui serviço de saúde prestado diretamente pela PYGUS e não substitui a relação entre paciente, responsável e profissional.</p>
+            <p>2.3 Os elementos técnicos, ferramentas e demais propriedades intelectuais relacionadas ao aplicativo são de titularidade exclusiva da PYGUS.</p>
 
-  <h2>3. Serviços Oferecidos</h2>
-  <p>3.1 O presente Termo se aplica para regular o uso do Aplicativo PYGUS, o qual oferece uma variedade de serviços destinados a auxiliar no desenvolvimento das habilidades ligadas à fonoaudiologia para crianças. Estes serviços podem incluir, mas não estão limitados a:</p>
-  <ul>
-    <li>Atividades interativas e educativas projetadas para melhorar a pronúncia e compreensão de sons.</li>
-    <li>Exercícios de audição e discriminação de fonemas.</li>
-    <li>Jogos e desafios adaptados para diferentes faixas etárias e níveis de habilidade.</li>
-    <li>Recursos de feedback e relatórios para pais ou responsáveis acompanharem o progresso das crianças.</li>
-  </ul>
-  <p>3.2 Os serviços disponibilizados no aplicativo são pagos.</p>
+            <h3>3. Papel do Profissional e Escopo do App</h3>
+            <p>3.1 O profissional de fonoaudiologia é o controlador dos dados do Paciente e define atividades, conteúdos e orientações clínicas.</p>
+            <p>3.2 O aplicativo é uma ferramenta de apoio e não substitui avaliação clínica, diagnóstico ou decisão profissional, tampouco é destinado a emergências.</p>
+            <p>3.3 Relatórios e análises automatizadas têm caráter de apoio e não substituem o julgamento clínico do profissional responsável.</p>
 
-  <h2>4. Direitos do Paciente</h2>
-  <p>4.1 Os Pacientes têm o direito de utilizar os serviços para os fins apropriados, conforme descrito no Aplicativo e nestes Termos de Uso. Isso inclui o uso dos recursos disponíveis para ajudar no desenvolvimento das habilidades de fonoaudiologia em crianças.</p>
-  <p>4.2 Os Pacientes têm o direito de utilizar os serviços em conformidade com todas as regras, diretrizes e políticas estabelecidas pela PYGUS. Isso inclui respeitar os direitos de propriedade intelectual da PYGUS e de terceiros, bem como manter um comportamento adequado ao interagir com os profissionais da fonoaudiologia, se aplicável.</p>
-  <p>4.3 Os Pacientes têm o direito de encerrar sua conta e deixar de utilizar os serviços a qualquer momento, sujeito aos termos e condições estabelecidos para o cancelamento de conta nestes Termos de Uso.</p>
-  <p>4.4 Os Pacientes têm o direito de esperar que a PYGUS mantenha a disponibilidade contínua dos serviços oferecidos pelo Aplicativo, sujeito às limitações e interrupções razoáveis conforme descrito nestes Termos de Uso.</p>
-  <p>4.5 Os Pacientes têm o direito de fornecer feedback, sugestões e comentários sobre os serviços oferecidos pelo Aplicativo. A PYGUS valoriza o feedback dos Pacientes e pode utilizar essas informações para melhorar a experiência do Paciente e os serviços prestados.</p>
-  <p>4.7 Os Pacientes têm o direito à privacidade e à confidencialidade de suas informações pessoais e de saúde. A PYGUS compromete-se a proteger essas informações de acordo com as leis aplicáveis de proteção de dados e privacidade.</p>
-  <p>4.8 Os Pacientes têm o direito de acessar e solicitar uma cópia de seus dados pessoais armazenados pelo Aplicativo. Além disso, os Pacientes têm o direito de solicitar a portabilidade de seus dados para outro serviço, conforme permitido pela legislação aplicável.</p>
-  <p>4.9 Os Pacientes têm o direito de serem notificados caso ocorra uma violação de segurança que possa comprometer a segurança ou a privacidade de seus dados pessoais, conforme exigido pela legislação aplicável.</p>
+            <h3>4. Uso do Aplicativo e Responsabilidades</h3>
+            <p>4.1 O Responsável Legal ou o Paciente (quando maior de idade) é responsável por fornecer os dispositivos e a conexão necessários para uso do aplicativo.</p>
+            <p>4.2 As credenciais de acesso devem ser mantidas em sigilo. Em caso de uso indevido, a PYGUS deve ser notificada imediatamente.</p>
+            <p>4.3 É proibido usar o aplicativo para fins ilegais, violar direitos de terceiros, tentar burlar mecanismos de segurança ou realizar engenharia reversa.</p>
+            <p>4.4 O Responsável Legal é responsável por orientar e supervisionar o uso do aplicativo pelo Paciente menor de idade.</p>
 
-  <h2>5. Acesso do Paciente ao Aplicativo</h2>
-  <p>5.1 A PYGUS concede aos Pacientes uma licença limitada, não exclusiva e intransferível para acessar e utilizar o Aplicativo de Fonoaudiologia Infantil de acordo com estes Termos de Uso.</p>
-  <p>5.2 Os Pacientes são responsáveis por fornecer e manter todos os dispositivos, conexões de internet e software necessários para acessar e utilizar o Aplicativo. A PYGUS não será responsável por quaisquer custos associados ao acesso do Paciente ao Aplicativo.</p>
-  <p>5.3 Os Pacientes são responsáveis por manter a confidencialidade de suas credenciais de acesso (como nome de Paciente e senha) e por todas as atividades que ocorrerem em sua conta. Os Pacientes concordam em notificar imediatamente a PYGUS sobre qualquer uso não autorizado de suas credenciais de acesso ou qualquer outra violação de segurança relacionada ao Aplicativo.</p>
-  <p>5.4 Os Pacientes concordam em utilizar o Aplicativo apenas para os fins apropriados e conforme permitido por estes Termos de Uso e quaisquer outras políticas ou diretrizes aplicáveis. É estritamente proibido qualquer uso não autorizado, ilegal ou prejudicial do Aplicativo.</p>
-  <p>5.5 A PYGUS reserva-se o direito de suspender ou revogar o acesso de um Paciente ao Aplicativo a qualquer momento, a seu exclusivo critério, se determinar que o Paciente violou estes Termos de Uso ou qualquer outra política aplicável, ou se a PYGUS decidir encerrar ou modificar o Aplicativo.</p>
-  <p>5.6 Os Pacientes são os únicos responsáveis por todas as atividades que ocorrerem em sua conta e pelo uso que fazem do Aplicativo. Os Pacientes concordam em indenizar, defender e isentar a PYGUS de qualquer responsabilidade decorrente do uso não autorizado de sua conta ou de qualquer violação destes Termos de Uso por parte do Paciente.</p>
+            <h3>5. Dados Pessoais e Conteúdos</h3>
+            <p>5.1 O uso do aplicativo pode envolver dados pessoais e sensíveis do Paciente, inclusive gravações de áudio. O Responsável Legal declara possuir as autorizações legais necessárias para o tratamento desses dados.</p>
+            <p>5.2 A PYGUS atua como operadora e trata os dados pessoais em nome do profissional responsável. Solicitações de acesso, correção, exclusão ou portabilidade devem ser direcionadas ao profissional controlador.</p>
+            <p>5.3 O Responsável Legal ou o Paciente (quando maior de idade) concede à PYGUS licença não exclusiva, limitada e gratuita para utilizar os conteúdos inseridos exclusivamente para a execução do serviço.</p>
 
-  <h2>6. Canais de Comunicação</h2>
-  <p>6.1 Os Pacientes têm o direito de apresentar sugestões e reclamações sobre o desempenho dos serviços ofertados. Essa comunicação pode ser enviada por e-mail para: suporte@pygus.com.br.</p>
-  <p>6.1.1 Se necessário, a PYGUS entrará em contato pelo e-mail cadastrado pelo Paciente para solicitar a complementação e obter informações adicionais sobre a reclamação.</p>
-  <p>6.2 O e-mail suporte@pygus.com.br foi criado especificamente para que nossos clientes possam entrar em contato conosco para qualquer dúvida, solicitação ou preocupação relacionada à LGPD e ao tratamento de dados pessoais.</p>
+            <h3>6. Assinaturas e Pagamentos (quando aplicável)</h3>
+            <p>6.1 O acesso ao aplicativo pode depender de assinatura contratada pelo Responsável Legal ou pelo profissional.</p>
+            <p>6.2 Quando houver cobrança direta ao Responsável Legal, ela será processada exclusivamente pelas lojas da Apple e do Google, seguindo as regras de cada loja.</p>
+            <p>6.3 A PYGUS não processa pagamentos fora das lojas oficiais.</p>
 
-  <h2>7. Restrições de Uso</h2>
-  <p>7.1 Os Pacientes concordam em utilizar o Aplicativo PYGUS apenas para os fins específicos descritos nos Termos de Uso e em conformidade com todas as leis e regulamentos aplicáveis.</p>
+            <h3>7. Propriedade Intelectual</h3>
+            <p>7.1 Todo o conteúdo, marca e materiais disponibilizados no aplicativo são de propriedade da PYGUS ou de seus licenciantes.</p>
+            <p>7.2 É vedada a reprodução, distribuição ou modificação de qualquer conteúdo do aplicativo sem autorização expressa da PYGUS.</p>
 
-  <h2>8. Direitos de Propriedade Intelectual</h2>
-  <p>8.1 Todo o conteúdo e os materiais disponibilizados no Aplicativo são de propriedade da PYGUS ou de seus licenciantes e estão protegidos por leis de propriedade intelectual.</p>
-  <p>8.2 Os Pacientes não têm permissão para reproduzir, distribuir ou modificar qualquer conteúdo do Aplicativo
+            <h3>8. Suspensão e Rescisão</h3>
+            <p>8.1 A PYGUS poderá suspender ou encerrar o acesso em caso de uso indevido, ilegal, violação de direitos, risco à segurança ou ordem judicial.</p>
+            <p>8.2 O Responsável Legal ou o Paciente pode encerrar o uso do aplicativo a qualquer momento, observadas as regras de assinatura quando aplicáveis.</p>
+
+            <h3>9. Limitação de Responsabilidade</h3>
+            <p>9.1 A PYGUS não se responsabiliza por decisões clínicas ou terapêuticas tomadas com base nas informações do aplicativo.</p>
+            <p>9.2 A PYGUS não garante resultados específicos, precisão absoluta ou adequação do aplicativo a finalidades particulares.</p>
+            <p>9.3 Em nenhuma hipótese a PYGUS será responsável por danos indiretos, lucros cessantes ou perda de dados decorrentes do uso do app.</p>
+            <p>9.4 A PYGUS não garante a preservação de dados em caso de falhas técnicas, devendo o Responsável Legal manter registros próprios quando necessário.</p>
+
+            <h3>10. Privacidade e Direitos do Titular</h3>
+            <p>10.1 O tratamento de dados pessoais é regido pela Política de Privacidade da PYGUS.</p>
+            <p>10.2 O exercício de direitos do titular deve ser feito pelo Responsável Legal ou Paciente maior de idade junto ao profissional controlador. A PYGUS poderá orientar e apoiar essas solicitações.</p>
+            <p>10.3 Em caso de incidente de segurança relevante, as comunicações ocorrerão conforme a legislação aplicável e em coordenação com o profissional responsável.</p>
+
+            <h3>11. Comunicação, Atualizações e Foro</h3>
+            <p>11.1 Para dúvidas, sugestões ou reclamações, o canal oficial é suporte@pygus.com.br.</p>
+            <p>11.2 Estes Termos podem ser alterados a qualquer momento. A versão vigente estará disponível no aplicativo.</p>
+            <p>11.3 Estes Termos são regidos pelas leis do Brasil, com foro na comarca de Maceió/AL.</p>
+
+            <p class="updated">Última atualização: 21/01/2026.</p>
+        </article>
+    </main>
+</body>
+</html>

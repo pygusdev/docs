@@ -4,96 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos de Uso - PYGUS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
+        :root {
+            --bg: #F6F3EF;
+            --paper: #FFFFFF;
+            --ink: #1F2933;
+            --muted: #52606D;
+            --accent: #F47327;
+            --accent-2: #3F7073;
+            --border: #E4E7EB;
         }
-        h1, h2, h3 {
-            color: #333;
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.7;
+            background: radial-gradient(1200px circle at 90% -10%, #FFF1E4 0%, transparent 45%),
+                radial-gradient(900px circle at 0% 0%, #E8F6F7 0%, transparent 45%),
+                var(--bg);
+            color: var(--ink);
+        }
+        main.page {
+            max-width: 900px;
+            margin: 48px auto;
+            padding: 0 20px 72px;
+        }
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 36px 40px;
+            box-shadow: 0 20px 60px rgba(31, 41, 51, 0.12);
+        }
+        .page-header {
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: var(--ink);
+        }
+        h2 {
+            margin-top: 32px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-2);
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 54px;
+            height: 3px;
+            background: var(--accent);
+            margin-top: 8px;
+            border-radius: 999px;
+        }
+        h3 {
+            margin-top: 24px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--ink);
         }
         p, li {
             margin-bottom: 16px;
+            color: var(--muted);
         }
-        ul {
+        ul, ol {
             padding-left: 20px;
+            margin: 12px 0 0;
+        }
+        .toc {
+            list-style: none;
+            padding-left: 0;
+            margin: 16px 0 0;
+            display: grid;
+            gap: 10px;
+        }
+        .toc li {
+            padding: 10px 12px;
+            border-radius: 12px;
+            background: #F8FAFB;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            color: var(--muted);
+        }
+        .lead {
+            font-size: 1.05rem;
+            margin: 0;
+        }
+        .updated {
+            margin-top: 32px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            background: #FFF4EC;
+            color: #8A3B12;
+            font-weight: 600;
+            display: inline-block;
+        }
+        @media (max-width: 600px) {
+            main.page {
+                margin: 32px auto;
+            }
+            .card {
+                padding: 24px;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Termos de Uso da PYGUS</h1>
-    <p>Olá, seja bem-vindo aos Termos de Uso da PYGUS. Este Termos de Uso rege o uso do aplicativo PYGUS pelos profissionais de FONOAUDIOLOGIA. Ao utilizar este Aplicativo, o Profissional concorda com este termos e com o tratamento de seus dados pessoais.</p>
-    
-    <h2>Os Termos de Uso tratam dos seguintes tópicos:</h2>
-    <ul>
-        <li>Aceite do fonoaudiólogo;</li>
-        <li>Declaração de propriedade do aplicativo mobile;</li>
-        <li>Papel do Fonoaudiólogo dentro do aplicativo;</li>
-        <li>Direitos de uso do fonoaudiólogo;</li>
-        <li>Acesso do fonoaudiólogo ao aplicativo;</li>
-        <li>Canais de comunicação;</li>
-        <li>Disposições gerais.</li>
-    </ul>
+    <main class="page">
+        <article class="card">
+            <header class="page-header">
+                <h1>Termos de Uso da PYGUS</h1>
+                <p class="lead">Estes Termos de Uso regulam o acesso e a utilização do aplicativo PYGUS pelos profissionais de fonoaudiologia. Ao utilizar o aplicativo, você concorda com estes Termos e com a nossa Política de Privacidade.</p>
+            </header>
 
-    <h3>1. Aceite do Fonoaudiólogo</h3>
-    <p>1.1 Para realizar o cadastro do FONOAUDIÓLOGO no aplicativo da PYGUS, é preciso aceitar expressamente nossos TERMOS DE USO, marcando a indicação de aceite no momento do cadastramento, no local indicado na tela.</p>
-    <p>1.2 A recusa destes Termos de Uso impede o cadastro do FONOAUDIÓLOGO em nosso aplicativo.</p>
+            <h2>Tópicos</h2>
+            <ul class="toc">
+                <li>Aceite e elegibilidade;</li>
+                <li>Sobre a PYGUS e o aplicativo;</li>
+                <li>Escopo do serviço;</li>
+                <li>Responsabilidades do profissional;</li>
+                <li>Conta e segurança;</li>
+                <li>Assinaturas e pagamentos;</li>
+                <li>Conteúdo inserido no app;</li>
+                <li>Propriedade intelectual;</li>
+                <li>Limitação de responsabilidade;</li>
+                <li>Disposições gerais.</li>
+            </ul>
 
-    <h3>2. Declaração de Propriedade do Aplicativo</h3>
-    <p>2.1 Estes Termos de Uso regem o acesso e ou uso do aplicativo e fornecidos pela empresa PYGUS, pessoa jurídica de direito privado, devidamente inscrita no CNPJ nº 47.932.823/0001-19, com sede na Rua Florestal, 57, Chã da Jaqueira, CEP 57018528, Maceió-Alagoas.</p>
-    <p>2.2 Os elementos técnicos, ferramentas e demais propriedades intelectuais relacionadas à plataforma são de titularidade exclusiva da PYGUS.</p>
-    <p>2.3 A utilização, modificação e/ou reprodução de qualquer elemento, funcionalidade ou ferramenta da plataforma deve ser objeto de licença específica.</p>
+    <h3>1. Aceite e Elegibilidade</h3>
+    <p>1.1 Para utilizar o aplicativo, é necessário aceitar expressamente estes Termos no momento do cadastro.</p>
+    <p>1.2 O aplicativo é destinado a profissionais habilitados e responsáveis pelas informações inseridas na plataforma.</p>
 
-    <h3>3. Papel do Fonoaudiólogo Dentro do Aplicativo</h3>
-    <p>3.1 Estes termos têm o objetivo de regular o uso do Aplicativo PYGUS, onde o FONOAUDIÓLOGO atuará, fornecendo serviços para o desenvolvimento das habilidades relacionadas à fonoaudiologia em crianças. Esses serviços podem abranger uma variedade de atividades, incluindo, mas não se limitando a:</p>
-    <ul>
-        <li>Avaliação da linguagem e da fala: Realização de testes e avaliações para identificar possíveis dificuldades na linguagem e na fala das crianças.</li>
-        <li>Desenvolvimento de planos de tratamento: Com base nas avaliações realizadas, o fonoaudiólogo pode desenvolver planos de tratamento personalizados para ajudar as crianças a superar suas dificuldades de comunicação.</li>
-        <li>Terapia da fala: Condução de sessões de terapia da fala utilizando recursos e exercícios específicos dentro do aplicativo para melhorar a pronúncia, articulação e compreensão da linguagem.</li>
-        <li>Estimulação da linguagem: Oferecimento de atividades e jogos que estimulem o desenvolvimento da linguagem, incluindo vocabulário, gramática, compreensão auditiva e expressão oral.</li>
-        <li>Treinamento auditivo: Implementação de exercícios para melhorar a percepção auditiva das crianças, ajudando no reconhecimento de sons, discriminação auditiva e habilidades de processamento auditivo.</li>
-    </ul>
-    <p>3.2 Os serviços prestados pelo Fonoaudiólogo dentro do aplicativo serão remunerados.</p>
-    <p>3.3 O Fonoaudiólogo concorda em manter a confidencialidade de todas as informações dos pacientes e dados pessoais dos usuários do Aplicativo, em conformidade com as leis de proteção de dados e privacidade aplicáveis.</p>
+    <h3>2. Sobre a PYGUS e o Aplicativo</h3>
+    <p>2.1 A PYGUS LTDA, inscrita no CNPJ nº 47.932.823/0001-19, com sede na Avenida Fernandes Lima 8, Sala 406, Edifício E. Centenário Office, Farol, Maceió/AL, CEP 57050-000, disponibiliza o aplicativo como ferramenta de apoio à prática profissional.</p>
+    <p>2.2 Os elementos técnicos e propriedades intelectuais do aplicativo são de titularidade exclusiva da PYGUS.</p>
 
-    <h3>4. Direitos de Uso do Fonoaudiólogo</h3>
-    <p>4.1 O Fonoaudiólogo tem o direito de acessar, corrigir, atualizar ou excluir seus dados pessoais a qualquer momento. Além disso, o mesmo pode exercer seus direitos previstos na Lei Geral de Proteção de Dados (LGPD), incluindo o direito de revogar o consentimento para o tratamento de seus dados pessoais e o direito de solicitar a portabilidade de seus dados.</p>
-    <p>4.2 Ao utilizar o Aplicativo, o Fonoaudiólogo consente com a coleta, processamento e armazenamento de seus dados pessoais conforme descrito nesta política. O Fonoaudiólogo pode gerenciar suas preferências de privacidade e consentimento por meio das configurações da conta no Aplicativo.</p>
+    <h3>3. Escopo do Serviço</h3>
+    <p>3.1 O aplicativo oferece recursos para organização, registro e acompanhamento de avaliações, incluindo o uso de gravações de áudio e geração de relatórios.</p>
+    <p>3.2 O aplicativo não substitui avaliação clínica, diagnóstico ou decisão profissional, tampouco é destinado a emergências.</p>
 
-    <h3>5. Acesso do Fonoaudiólogo ao Aplicativo</h3>
-    <p>5.1 O Fonoaudiólogo é responsável por fornecer e manter todos os dispositivos, conexões de internet e software necessários para acessar e utilizar o Aplicativo. A PYGUS não será responsável por quaisquer custos associados ao acesso do Fonoaudiólogo ao Aplicativo.</p>
-    <p>5.2 O Fonoaudiólogo é responsável por manter a confidencialidade de suas credenciais de acesso e por todas as atividades que ocorrerem em sua conta. O Fonoaudiólogo concorda em notificar imediatamente a PYGUS sobre qualquer uso não autorizado de suas credenciais de acesso ou qualquer outra violação de segurança relacionada ao Aplicativo.</p>
-    <p>5.3 O Fonoaudiólogo concorda em utilizar o Aplicativo apenas para os fins apropriados e conforme permitido por estes Termos de Uso e quaisquer outras políticas ou diretrizes aplicáveis. É estritamente proibido qualquer uso não autorizado, ilegal ou prejudicial do Aplicativo.</p>
-    <p>5.4 O Fonoaudiólogo é responsável por fornecer e manter todos os dispositivos, conexões de internet e software necessários para acessar e utilizar o Aplicativo. A PYGUS não será responsável por quaisquer custos associados ao acesso do Paciente ao Aplicativo.</p>
+    <h3>4. Responsabilidades do Profissional</h3>
+    <p>4.1 O profissional é responsável pelos dados que insere no aplicativo e por obter as autorizações legais necessárias para tratar dados de pacientes.</p>
+    <p>4.2 O profissional deve manter a confidencialidade dos dados de pacientes e utilizar o aplicativo em conformidade com a legislação aplicável.</p>
+    <p>4.3 O profissional é o único responsável pela interpretação, validação e uso clínico das informações geradas pelo aplicativo.</p>
 
-    <h3>6. Canais de Comunicação</h3>
-    <p>6.1 Se o Fonoaudiólogo tiver alguma dúvida ou preocupação sobre este Termos de Uso ou sobre o tratamento de seus dados pessoais, ele pode entrar em contato conosco através do nosso e-mail.</p>
-    <p>6.2 O e-mail suporte@pygus.com.br foi criado especificamente para a comunicação relacionada à LGPD e ao tratamento de dados pessoais.</p>
+    <h3>5. Conta e Segurança</h3>
+    <p>5.1 O profissional é responsável por manter suas credenciais de acesso em sigilo e por todas as atividades realizadas em sua conta.</p>
+    <p>5.2 Em caso de suspeita de uso indevido, o profissional deve notificar a PYGUS imediatamente.</p>
 
-    <h3>7. Restrições de Uso</h3>
-    <p>7.1 O Fonoaudiólogo concorda em utilizar o Aplicativo PYGUS apenas para os fins específicos descritos nos Termos de Uso e em conformidade com todas as leis e regulamentos aplicáveis.</p>
+    <h3>6. Assinaturas e Pagamentos</h3>
+    <p>6.1 O acesso ao aplicativo pode depender de assinatura paga, processada exclusivamente pelas lojas da Apple e do Google.</p>
+    <p>6.2 Cobranças, renovação, cancelamento e reembolsos seguem as regras da loja onde a assinatura foi realizada.</p>
+    <p>6.3 A PYGUS não processa pagamentos fora das lojas oficiais.</p>
 
-    <h3>8. Direitos de Propriedade Intelectual</h3>
-    <p>8.1 Todo o conteúdo e os materiais disponibilizados no Aplicativo são de propriedade da PYGUS ou de seus licenciantes e estão protegidos por leis de propriedade intelectual.</p>
-    <p>8.2 O Fonoaudiólogo não têm permissão para reproduzir, distribuir ou modificar qualquer conteúdo do Aplicativo sem autorização prévia por escrito da Empresa.</p>
+    <h3>7. Conteúdo Inserido no Aplicativo</h3>
+    <p>7.1 O profissional declara possuir os direitos e autorizações necessárias para inserir dados e conteúdos no app.</p>
+    <p>7.2 A PYGUS utiliza esses conteúdos apenas para prestação do serviço e conforme a Política de Privacidade.</p>
+    <p>7.3 O profissional concede à PYGUS licença não exclusiva, limitada e gratuita para utilizar os conteúdos inseridos exclusivamente para a execução do serviço.</p>
 
-    <h3>9. Limitação de Responsabilidade</h3>
-    <p>9.1 A PYGUS não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais, consequentes ou punitivos decorrentes do uso ou da incapacidade de usar o Aplicativo.</p>
+    <h3>8. Restrições de Uso</h3>
+    <p>8.1 É proibido usar o aplicativo para fins ilegais, violar direitos de terceiros ou tentar burlar mecanismos de segurança.</p>
 
-    <h3>10. Resolução de Disputas</h3>
-    <p>10.1 Qualquer disputa relacionada a estes Termos de Uso será resolvida por meio de mediação e/ou conciliação, utilizando-se de disputa litigiosa em última opção.</p>
+    <h3>9. Direitos de Propriedade Intelectual</h3>
+    <p>9.1 Todo o conteúdo do aplicativo é protegido por leis de propriedade intelectual e não pode ser copiado ou distribuído sem autorização.</p>
 
-    <h3>11. Jurisdição e Lei Aplicável</h3>
-    <p>11.1 Estes Termos de Uso são regidos e interpretados de acordo com as leis do Brasil. Qualquer ação legal relacionada a estes Termos de Uso será iniciada e mantida em tribunais localizados em Maceió, Alagoas, e o Fonoaudiólogo consente com a jurisdição e local desses tribunais.</p>
+    <h3>10. Disponibilidade e Suporte</h3>
+    <p>10.1 A PYGUS busca manter o aplicativo disponível, mas não garante funcionamento ininterrupto.</p>
+    <p>10.2 Poderemos realizar manutenções, correções e atualizações sem aviso prévio.</p>
+    <p>10.3 A PYGUS não garante a preservação de dados em caso de falhas técnicas, devendo o profissional manter cópias e registros próprios conforme suas obrigações legais e éticas.</p>
 
-    <h3>12. Disposições Gerais</h3>
-    <p>12.1 Os Termos de Uso terão vigência a partir do acesso aplicativo da PYGUS e confirmação do cadastro do Fonoaudiólogo e permanecerá vigente até que seja efetuado o encerramento da conta.</p>
-    <p>12.2 A PYGUS poderá, a qualquer tempo, alterar os Termos de Uso para adequações, inserções ou exclusão de cláusulas, visando o aprimoramento dos serviços disponibilizados.</p>
-    <p>12.2.1 As novas condições entrarão em vigor quando a PYGUS divulgar a versão atualizada dos Termos de Uso em sua plataforma, sendo possível ao Fonoaudiólogo manifestar oposição à atualização por meio de recusa aos novos Termos de Uso, o que acarretará na suspensão do acesso ao aplicativo.</p>
-    <p>12.3 A PYGUS respeita a privacidade dos Fonoaudiólogo. Consulte nossa Política de Privacidade para obter informações sobre como coletamos, usamos e protegemos seus dados pessoais.</p>
+    <h3>11. Limitação de Responsabilidade</h3>
+    <p>11.1 A PYGUS não se responsabiliza por decisões clínicas tomadas com base no uso do aplicativo.</p>
+    <p>11.2 Em nenhuma hipótese a PYGUS será responsável por danos indiretos, lucros cessantes ou perda de dados decorrentes do uso do app.</p>
+    <p>11.3 A PYGUS não garante resultados específicos, precisão absoluta ou adequação do aplicativo a finalidades particulares.</p>
 
-    <h3>13. Contato</h3>
-    <p>Para quaisquer perguntas ou preocupações relacionadas a estes Termos de Uso, entre em contato conosco pelo e-mail suporte@pygus.com.br.</p>
+    <h3>12. Rescisão</h3>
+    <p>12.1 O profissional pode encerrar sua conta a qualquer momento. A PYGUS pode suspender ou encerrar o acesso em caso de uso indevido, ilegal, violação de direitos, risco à segurança, ordem judicial ou descumprimento destes Termos.</p>
+
+    <h3>13. Privacidade</h3>
+    <p>13.1 O tratamento de dados pessoais é regido pela Política de Privacidade.</p>
+
+    <h3>14. Atualizações</h3>
+    <p>14.1 Estes Termos podem ser alterados a qualquer momento. A versão vigente estará disponível no aplicativo.</p>
+            <p class="updated">Última atualização: 21/01/2026.</p>
+
+    <h3>15. Contato</h3>
+    <p>Para dúvidas, entre em contato pelo e-mail suporte@pygus.com.br.</p>
+
+            <h3>16. Jurisdição e Lei Aplicável</h3>
+            <p>Estes Termos são regidos pelas leis do Brasil, com foro na comarca de Maceió/AL.</p>
+        </article>
+    </main>
 </body>
 </html>
